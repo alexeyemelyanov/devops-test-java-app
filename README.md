@@ -10,7 +10,7 @@ mvn clean package
 
 * [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
 
-You will the new directory named 'target' where you can find the executable jar file
+You will see the new directory named 'target' where you can find the executable jar file
 
 ### Running
 
