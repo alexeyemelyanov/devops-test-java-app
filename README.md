@@ -1,17 +1,29 @@
-# Getting Started
+# Demo java app for DevOps test task
 
-### Reference Documentation
-For further reference, please consider the following sections:
+### Building an app
+
+First build the java app using maven
+
+```
+mvn clean package
+``` 
 
 * [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.3.1.RELEASE/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.3.1.RELEASE/maven-plugin/reference/html/#build-image)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/2.3.1.RELEASE/reference/htmlsingle/#boot-features-developing-web-applications)
 
-### Guides
-The following guides illustrate how to use some features concretely:
+You will the new directory named 'target' where you can find the executable jar file
 
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
+### Running
 
+To run this app you need java of version 8 or higher
+
+```
+java -jar ./target/demo-0.0.1-SNAPSHOT.jar
+``` 
+
+By default this java app listen to the port 8080, check if it works by requesting an url
+
+```
+http://localhost:8080/
+``` 
+
+You can change the application port to 3000 by setting "server.port" as VM option (-D)
